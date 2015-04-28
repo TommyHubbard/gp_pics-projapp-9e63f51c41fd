@@ -1,0 +1,71 @@
+<div data-role="view"
+     id="form"
+     data-layout="main"
+     class="form-scrn"
+     data-model="pt.Form.viewModel"
+     data-bind="events:{init:init, show:show}">
+
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-transition="slide" data-icon="backbutton" data-align="left"></a>
+            <a data-role="button" data-transition="slide" data-align="right" data-bind="events: { click: loadSearch }" class="inqBtn">Inquiry</a>
+            <span id="form-name" data-align="center"></span>
+        </div>
+    </header>
+    <div id="form-container"></div>
+</div>
+
+
+<script id="containerTemplate" type="text/x-handlebars-template">
+
+    <div>
+        {{#if options.label}}
+        <h3 {{#if options.labelClass}} class="{{options.labelClass}}" {{/if}}>{{{options.label}}}</h3>
+        {{/if}}
+        
+        {{#container}}{{/container}}
+
+        {{#if options.helper}}
+        <input type="image" data-icon="icon-info">
+        <small class="{{#if options.helperClass}}{{options.helperClass}}{{/if}}">
+            {{{options.helper}}}
+        </small>
+        {{/if}}
+    </div>
+
+</script>
+
+<script id="containerObjectTemplate" type="text/x-handlebars-template">
+
+    <ul data-role="listview" data-style="inset" class="km-widget km-listview km-list km-listinset">
+
+        {{#each items}}
+
+        {{#item}}{{/item}}
+
+        {{/each}}
+
+    </ul>
+
+</script>
+
+
+<script id="controlTemplate" type="text/x-handlebars-template">
+
+    <li>
+
+        {{#if options.label}}
+        <label class="{{#if options.labelClass}}{{options.labelClass}}{{/if}} alpaca-control-label" for="{{id}}">{{{options.label}}}</label>
+        {{/if}}
+
+        {{#control}}{{/control}}
+
+        {{#if options.helper}}
+        <small class="alpaca-helper {{#if options.helperClass}}{{options.helperClass}}{{/if}}">
+            {{{options.helper}}}
+        </small>
+        {{/if}}
+
+    </li>
+
+</script>

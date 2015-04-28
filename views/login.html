@@ -1,0 +1,35 @@
+<div data-role="view" 
+     id="login"
+     data-layout="blank"
+     class="login-scrn form-view"
+     data-model="pt.Login.viewModel"
+     data-bind="events:{init:init, show:show}">
+    <div id="loginConsole">
+        <header data-role="header" id="header">
+               <img src="../styles/images/doc-lib-logo.jpg" />
+        </header>
+        <form id="login-form">
+            <div class="error center-text" data-bind="text: errorMessage"></div>
+            <div class="loginBg">
+                <br/>
+                <ul class="doclib-login" data-role="listview" data-style="inset">
+                    <li class="username"><input type="text" id="loginUsername" placeholder="Username" required="required" validationmessage="Username is required!"/></li>
+                    <br/>
+                    <li class="password"><input type="password" id="loginPassword" placeholder="Password" required="required" validationmessage="Password is required!"/></li>
+                    <br/>
+                </ul>
+                <ol class="group-wrp">
+                    <li>
+                        <span data-role="touch" data-bind="events:{tap: login}">
+                            <a data-role="button" class="btn btn-login">Login</a>
+                        </span>
+                    </li>
+                </ol>
+                <br/>
+            </div>
+        </form>
+        <div class="versionInfo"> 
+            <p>DocLib  - Version <span data-bind="text: getVersion"></span></p>
+        </div>
+    </div>
+</div>

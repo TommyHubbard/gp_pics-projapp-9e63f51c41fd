@@ -1,0 +1,70 @@
+<div data-role="view"
+     id="search"
+     data-layout="main"
+     class="search-scrn"
+     data-model="pt.Projgarage.viewModel"
+     data-bind="events:{init:init, show:show}">
+    
+    <header id="appPages">
+        <div class="pageLogo">
+            <img src="../styles/images/doc-lib-logo-2.jpg">
+        </div>
+        <div class="pageTitle">
+            Project Garage
+        </div>
+        <div class="pageLogOut">
+             <a class="nav-button" data-align="right" data-role="button" data-bind="events: { click: signout }">Logout</a>
+        </div>
+     </header>
+     <div class="customForm ui-grid-a">
+        <div class="formField1"> 
+            <select label="Go to Expense Line">
+                <option default>Go to Expense Line</option>
+            </select>
+        </div>
+        <div class="formField1Icon">
+           <img src="../styles/images/add-icon.png">
+        </div>
+        <div class="formFieldSelect"> 
+            <select label="Expense Type">
+                <option default>Expense Type</option>
+            </select>
+        </div>
+        <div class="formFieldSelect"> 
+            <select label="Cost Center">
+                <option default>Cost Center</option>
+            </select>
+        </div>
+        <div class="formFieldSelect"> 
+            <select label="Sub-Account">
+                <option default>Sub-Account</option>
+            </select>
+        </div>
+        <div class="formFieldInput1 ui-block-a"> 
+            <input placeholder="Amount">
+        </div>
+        <div class="formFieldText ui-block-b"> 
+            OR
+        </div>
+        <div class="formFieldInput2 ui-block-c"> 
+            <input label="Miles" placeholder="Miles">
+        </div>
+    </div>
+    <div data-role="footer" id="footer">
+        <ul id="bottomNav">
+            <li>
+                <img class="bottomNavImg" src="../styles/images/mail.png">
+            </li>
+            <li>
+                <img class="bottomNavImg" src="../styles/images/camera.png" data-bind="click: addImage">
+            </li>
+            <li>
+                <img class="bottomNavImg" src="../styles/images/home.png">
+            </li>
+            <li>
+                <img class="bottomNavImg" src="../styles/images/gear.png">
+            </li>       
+        </ul>
+     </div>
+    
+</div>

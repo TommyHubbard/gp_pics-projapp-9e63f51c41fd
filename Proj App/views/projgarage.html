@@ -1,0 +1,132 @@
+<div data-role="view"
+     id="projgarage"
+     data-layout="main"
+     class="projgarage-scrn"
+     data-model="pt.Projgarage.viewModel"
+     data-bind="events:{init:init, show:show}">
+    
+    <header id="appPages">
+        <div class="pageLogo">
+            <img src="../styles/images/doc-lib-logo-2.jpg">
+        </div>
+        <div class="pageTitle">
+            Project Garage
+        </div>
+        <div class="pageLogOut">
+             <a class="nav-button" data-align="right" data-role="button" data-bind="events: { click: signout }">Logout</a>
+        </div>
+     </header>
+    <form id="form">
+    <div class="customForm">
+        <table cellspacing="3" cellpadding="0">
+            <tr>
+                <td>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <div class="formField1"> 
+                                    <select>
+                                        <option default>Go to Expense Line</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formField1Icon">
+                                    <img src="../styles/images/add-icon.png">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <div class="formFieldSelect"> 
+                        <select>
+                            <option default>Expense Type</option>
+                        </select>
+                    </div>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                    <div class="formFieldInput"> 
+                        <input type="date" placeholder="Date" />
+                    </div>
+                </td>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="formFieldSelect"> 
+                         <select>
+                             <option default>Cost Center</option>
+                         </select>
+                      </div>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="formFieldSelect"> 
+                         <select>
+                             <option default>Sub-Account</option>
+                         </select>
+                     </div>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <table cellspacing="0" cellpadding="0">
+                         <tr>
+                             <td width="40%"> 
+                                 <div class="formFieldInput" >
+                                     <input type="text" placeholder="Amount" />
+                                 </div>
+                             </td>
+                             <td width="auto">
+                                 <div class="formFieldText">
+                                     OR
+                                 </div>
+                             </td>
+                             <td width="40%">
+                                 <div class="formFieldInput"> 
+                                     <input type="text" placeholder="Miles" />
+                                 </div>
+                             </td>
+                         </tr>
+                     </table>
+                 </td>
+             </tr>    
+             <tr>
+                <td >
+                    <div class="formFieldCheckBox"> 
+                        <input type="checkbox" checked="checked">
+                        Reimbursable
+                    </div>
+                </td>
+             </tr>
+             <tr>
+                <td>
+                    <div class="formFieldTextArea"> 
+                        <textarea placeholder="Notes" rows="10"></textarea>
+                    </div>
+                </td>
+             </tr>
+        </table>
+    </div>
+     <div data-role="footer" id="footer">
+         <ul id="bottomNavAlt">
+            <li>
+                <img class="bottomNavImg" src="../styles/images/camera-flat.png"> 
+                <div>Take Picture</div>
+            </li>
+            <li>
+                <div>Show<br/>Attachments</div>
+                <img class="bottomNavImg" src="../styles/images/attachment.png" data-bind="click: addImage">
+            </li>  
+        </ul>
+        <span data-role="touch" data-bind="events:{tap: login}">
+            <a data-role="button" class="btn btn-login">Submit</a>
+        </span>
+     </div>
+     </form>
+</div>

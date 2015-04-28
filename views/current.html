@@ -1,0 +1,19 @@
+<div data-role="view"
+     id="current"
+     data-layout="main"
+     class="current-scrn"
+     data-model="pt.Current.viewModel"
+     data-bind="events:{init:init, show:show}">
+
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-transition="slide" data-icon="backbutton" data-align="left" data-bind="events: {click: emptyAndGoBack}" ></a>
+            Current
+            <a data-role="button" data-transition="slide" data-align="right" data-bind="events: { click: loadHistory }" class="inqBtn">History</a>
+            <span id="form-name" data-align="center"></span>
+        </div>
+    </header>
+
+        <div id="results-container"></div>
+</div>
+

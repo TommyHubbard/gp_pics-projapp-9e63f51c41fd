@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{60094a9d-19ee-48b7-99a5-5532ea5c0473}</ProjectGuid>
+    <ProjectName>PowerTel</ProjectName>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <ItemGroup>
+    <Content Include=".abignore" />
+    <Content Include=".abproject" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="index.html" />
+    <Content Include="js\alerts.js" />
+    <Content Include="js\app.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\config.js" />
+    <Content Include="js\datastore.js" />
+    <Content Include="js\form.js" />
+    <Content Include="js\formgenerator.js" />
+    <Content Include="js\home.js" />
+    <Content Include="js\login.js" />
+    <Content Include="lib\alpaca\dist\alpaca\web\alpaca.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\alpaca.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\alpaca.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\alpaca.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\alpaca-icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\date.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\down.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\email.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\left.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\phone.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\alpaca\web\images\time.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\alpaca\dist\lib\handlebars\handlebars.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\amplify\amplify.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\jquery.min.map" />
+    <Content Include="lib\kendo-ui-core\js\kendo.ui.core.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\sprite_kpi.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\Flat\sprite_kpi_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSans-Bold.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSans-BoldOblique.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSans-Oblique.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSans.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSansMono-Bold.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSansMono-Oblique.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSansMono.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSerif-Bold.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSerif-Italic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\DejaVuSerif.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\fonts\DejaVu\LICENSE.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\editor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\imagebrowser.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\indeterminate.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\loading-image.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\loading.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\loading_2x.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\slider-h.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\slider-v.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\sprite.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\sprite_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\sprite_kpi.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\HighContrast\sprite_kpi_2x.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\back.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\kendoui.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\kendoui.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\kendoui.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\wp8_icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\images\wp8_inverseicons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\kendo.mobile.all.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\brushed-metal.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots7.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots8.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\dots9.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\glass-lighter.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\glass.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\highlight.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\hsv-gradient.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\hue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\leather1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\leather2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\noise.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\stripe6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\transparency.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\kendo-ui-core\styles\textures\transtexture.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\lodash\lodash.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\rsvp\rsvp.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\images\appbuilder.png" />
+    <Content Include="styles\images\appbuilder2x.png" />
+    <Content Include="styles\images\location.png" />
+    <Content Include="styles\images\location2x.png" />
+    <Content Include="styles\images\location_active.png" />
+    <Content Include="styles\images\location_active2x.png" />
+    <Content Include="styles\images\logo.png" />
+    <Content Include="styles\images\logo2x.png" />
+    <Content Include="styles\images\ptlogo.gif" />
+    <Content Include="styles\images\search.png" />
+    <Content Include="styles\images\search2x.png" />
+    <Content Include="styles\images\search_active.png" />
+    <Content Include="styles\images\search_active2x.png" />
+    <Content Include="styles\images\sprite-weather.png" />
+    <Content Include="styles\images\sprite-weather2x.png" />
+    <Content Include="styles\main.css" />
+    <Content Include="views\form.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\settings.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-40@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-60@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="js\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\alpaca\" />
+    <Folder Include="lib\alpaca\dist\" />
+    <Folder Include="lib\alpaca\dist\alpaca\" />
+    <Folder Include="lib\alpaca\dist\alpaca\web\" />
+    <Folder Include="lib\alpaca\dist\alpaca\web\images\" />
+    <Folder Include="lib\alpaca\dist\lib\" />
+    <Folder Include="lib\alpaca\dist\lib\handlebars\" />
+    <Folder Include="lib\amplify\" />
+    <Folder Include="lib\jquery\" />
+    <Folder Include="lib\kendo-ui-core\" />
+    <Folder Include="lib\kendo-ui-core\js\" />
+    <Folder Include="lib\kendo-ui-core\styles\" />
+    <Folder Include="lib\kendo-ui-core\styles\Flat\" />
+    <Folder Include="lib\kendo-ui-core\styles\fonts\" />
+    <Folder Include="lib\kendo-ui-core\styles\fonts\DejaVu\" />
+    <Folder Include="lib\kendo-ui-core\styles\HighContrast\" />
+    <Folder Include="lib\kendo-ui-core\styles\images\" />
+    <Folder Include="lib\kendo-ui-core\styles\textures\" />
+    <Folder Include="lib\lodash\" />
+    <Folder Include="lib\rsvp\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="styles\" />
+    <Folder Include="styles\images\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+</Project>

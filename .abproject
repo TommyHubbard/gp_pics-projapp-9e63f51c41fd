@@ -1,0 +1,40 @@
+{
+  "ProjectName": "Proj App",
+  "ProjectGuid": "e4b68a61-c673-4989-8988-b4b0dbe229be",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ProjApp",
+  "DisplayName": "Proj App",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{fc370efe-9d95-499f-b055-1a14aa343b19}",
+  "WP8ProductID": "{7de190f0-2f9e-429e-8fca-c691c2ac9474}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ProjApp",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}

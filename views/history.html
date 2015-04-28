@@ -1,0 +1,22 @@
+<div data-role="view"
+     id="history"
+     data-layout="main"
+     class="history-scrn"
+     data-model="pt.History.viewModel"
+     data-bind="events:{init:init, show:show}">
+
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-transition="slide" data-icon="backbutton" data-align="left" data-bind="events: {click: emptyAndGoBack}" ></a>
+            Historical Activity
+            <span id="form-name" data-align="center"></span>
+        </div>
+    </header>
+        <div id="history-header"></div>
+        <div id="history-container"></div>
+ <div data-role="navbar" class="subNav">
+            <a data-role="button" data-transition="slide" data-align="left" data-bind="events: {click: emptyAndGoBack}" >Previous</a>
+            <a data-role="button" data-transition="slide" data-align="right" data-bind="events: {click: emptyAndGoBack}" >Next</a>    
+ </div>
+</div>
+

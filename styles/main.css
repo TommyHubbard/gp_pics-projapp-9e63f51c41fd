@@ -1,0 +1,741 @@
+.km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
+
+/* General */
+
+.cf {
+  zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.km-flat .km-loader,
+.km-flat .km-rowinsert,
+.km-flat .km-state-active,
+.km-flat .km-scroller-pull,
+.km-flat .k-slider-selection,
+.km-flat .km-touch-scrollbar,
+.km-flat .km-pages .km-current-page,
+.km-flat .k-slider .k-draghandle,
+.km-flat .k-slider .k-draghandle:hover,
+.km-flat .km-tabstrip .km-state-active,
+.km-flat .km-scroller-refresh.km-load-more,
+.km-flat .km-popup .k-state-hover,
+.km-flat .km-popup .k-state-focused,
+.km-flat .km-popup .k-state-selected,
+.km-flat .km-actionsheet > li > a:active,
+.km-flat .km-actionsheet > li > a:hover,
+.km-flat li.km-state-active .km-listview-link,
+.km-flat li.km-state-active .km-listview-label,
+.km-flat .km-listview-label input[type=radio]:checked,
+.km-flat .km-listview-label input[type=checkbox]:checked {
+    background: #0071BC;
+    border: 0 none;
+}
+
+#doclib.km-flat,
+#doclib.km-flat .km-navbar,
+#doclib.km-flat .km-content {
+    border: 0 none;
+    color: #0071BC;
+    font-family: "Open Sans", sans-serif;
+    background-color: transparent;  /* #fff */
+}
+
+#doclib .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#doclib .hide-text {
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+#doclib .center-text {
+    text-align: center;
+}
+
+.error {
+    color: #ff0000;
+    font-size:  18px;
+}
+
+/* Forms */
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {  
+    color: #000;
+}
+
+#doclib.km-flat form .km-list > li {
+    padding: .7em .7em .5em;
+    border-color: #eaeced;
+    background-color: #fff;
+}
+
+#doclib.km-flat #form-container .km-list > li {
+    border-color: #eaeced;
+    background-color: #fff;
+    border-left-width: 0;
+    border-right-width: 0;
+    overflow: visible;
+}
+
+#doclib.km-flat form .km-listinset > li:first-child,
+#doclib.km-flat form .km-listgroupinset .km-list > li:first-child {
+    border-width: 0 0 1px;
+    border-color: #eaeced;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+}
+
+#doclib.km-flat form .km-listinset > li:last-child,
+#doclib.km-flat form .km-listgroupinset .km-list > li:last-child {
+    border-width: 0 0 1px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+
+#doclib.km-flat #form-container .km-listinset > li:first-child,
+#doclib.km-flat #form-container  .km-listgroupinset .km-list > li:first-child {
+    border-width: 0 0 1px;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+}
+
+#doclib.km-flat #form-container  .km-listinset > li:last-child,
+#doclib.km-flat #form-container  .km-listgroupinset .km-list > li:last-child {
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+
+#doclib.km-flat .km-list input[type="text"]:not(.k-input),
+#doclib.km-flat .km-list input[type="password"],
+#doclib.km-flat .km-list input[type="email"],
+#doclib.km-flat .km-list input[type="date"],
+#doclib.km-flat textarea,
+#doclib.km-flat select {
+    position: static;
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+#doclib.km-flat select {
+    padding: .4em .2em;
+}
+
+/* Buttons */
+
+#doclib .btn, #doclib .alpaca-form-button {
+    position: relative;
+    margin: 0 -1px;
+    padding: .6em 0;
+    border: 0 none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0071BC;
+    background: url(images/btn-gradient-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+
+#doclib .disabled .btn {
+    opacity: .35;
+}
+
+/* App Header */
+
+#header {
+    text-align: center;
+}
+
+#header img {
+    display:inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#doclib.km-flat .km-header .km-navbar {
+    /* min-height: 3.15em;
+       color: #fff;
+       background-color: #0071BC; 
+    */
+    color: #000;
+}
+
+#doclib.km-flat .km-header .km-view-title {
+    /* margin-top: .4em;*/
+    font-size: 1rem;
+}
+
+/* App Footer */
+
+#doclib .login-scrn .km-footer {
+    color: #0071BC;
+    text-align: center;
+    background-color: transparent;
+}
+
+#doclib .login-scrn .km-footer p {
+    font-size: .75rem;
+    line-height: .75em;
+}
+
+#doclib .login-scrn .km-footer p.version {
+    font-size: .50rem;
+    color: grey;
+}
+
+
+#footer {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 13px;
+}
+
+/* LOGIN SCREEN */
+
+.doclib-login {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.loginBg {
+    background: url(images/gradient-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    position: relative;
+    top: 25px;
+}
+
+
+
+/* Basic */ 
+@media all and (orientation: landscape) {
+    #login { 
+        /* background: url(images/);
+         background-position: center 20%; 
+         background-repeat: no-repeat;
+         background-attachment: fixed; 
+         background-size: cover; */
+         position: relative;
+         opacity: 0.9;
+         }
+}
+
+@media only screen and (orientation:  portrait) { 
+    #login {
+         /* background: url(images/);
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-attachment: fixed; 
+         background-size: cover; */
+         position: relative;
+         }
+}
+
+/* smart phone */
+@media only screen and (orientation:  portrait) {
+	#loginConsole {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+		top:  30px;
+	}
+}
+
+@media only screen and (orientation:  landscape) {
+	#loginConsole {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+		top:  100px;
+	}
+}
+
+/* tablet */
+
+@media only screen and (min-device-width: 400px) and (orientation: portrait) {
+	#loginConsole {
+        margin: 0 auto;
+        position: relative; 
+		top:  500px; 
+    }
+}
+
+@media only screen and (min-device-width: 720px) and (orientation: landscape) {
+	#loginConsole {
+        margin: 0 auto;
+        position: relative; 
+		top:  300px; 
+    }
+}
+
+/* remove native scrolling in iOS */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+.versionInfo {
+    text-align: center;
+    font-size: .85rem;
+}
+
+#doclib .app-logo,
+#doclib .app-name {
+    margin-top: 1.5em;
+}
+
+ /*
+ #doclib .app-logo {
+    width: 200px;
+    height: 79px;
+    background: transparent url(images/doc-lib-logo.jpg) no-repeat 0 0;
+    }
+*/
+
+#doclib .login-scrn .group-wrp {
+    margin: 0 auto;
+    padding: 0; 
+    text-align: center;
+    list-style-type: none;
+    width: 80%;
+    
+}
+
+#doclib .login-scrn .group-wrp li {
+  margin: 1.5em 0 0;
+}
+
+#doclib .login-scrn .group-wrp .btn {
+    display: block;
+}
+
+/* Form screen  */
+
+#doclib .form-scrn .alpaca-form-buttons-container {
+    margin: -1em 1em 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+#doclib .form-scrn .alpaca-form-buttons-container .alpaca-form-button-submit {
+    display: block;
+    width: 100%;
+}
+
+/* Fix for the select width */
+#doclib .form-scrn .alpaca-field .k-dropdown {
+    width: 62%;
+}
+
+/* Search screen 
+
+#doclib .search-scrn .group-wrp {
+    margin: -1em 1em 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+#doclib .search-scrn .group-wrp li {
+  margin: 1.5em 0 0;
+}
+
+#doclib .search-scrn .group-wrp .btn {
+    display: block;
+    position: relative;
+    top: 5px;
+}
+
+*/
+
+/* Search screen */
+#doclib .search-scrn .alpaca-form-buttons-container {
+    margin: -1em 1em 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+#doclib .search-scrn .alpaca-form-buttons-container .alpaca-form-button-submit {
+    display: block;
+    width: 100%;
+}
+
+/* Fix for the select width */
+#doclib .search-scrn .alpaca-field .k-dropdown {
+    width: 62%;
+}
+
+#results-container {
+    position: relative;
+    top: 30px;
+}
+
+.searchResults {
+    width: 90%;
+    padding: 20px;
+    margin:  0 auto;
+    font: bold 16px Verdana, san-serif; 
+    padding:  15px 0;
+    border-bottom:  1px solid #b9c7c8;
+}
+
+
+/* History Screen */
+#history-header {
+    position: relative;
+    top: 30px;
+}
+
+.timeStamp {
+    width: 90%;
+    padding: 20px;
+    margin:  0 auto;
+    text-align: center;
+    font: bold 16px Verdana, san-serif; 
+    padding:  15px 0;
+    clear: both;
+}
+
+#history-container {
+    position: relative;
+    top: 20px;
+}
+
+.historyResults {
+    width: 90%;
+    padding: 20px;
+    margin:  0 auto;
+    font: bold 15px Verdana, san-serif; 
+    padding:  15px 0;
+    border-bottom:  1px solid #b9c7c8;
+    clear: both;
+}
+
+/* Custom Icons */
+
+.km-backbutton:after,
+.km-backbutton:before {
+    content: "\e317";
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.inqBtn { 
+    position: relative;
+    bottom: 1px;
+    font: bold 16px Arial, san-serif; 
+      
+}
+
+
+header#appPages {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.pageLogo {
+   width: auto;
+   float:left;
+   position: relative;
+   left: 10px;
+}
+
+.pageTitle {
+   width: auto;
+   float: left;
+   position: relative;
+   top: 8px; 
+   left: 30px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+}
+
+.pageLogOut {
+   width: auto;
+   float: right;
+   position: relative; 
+   right: 7px;  
+}
+
+.subNav { 
+    clear: both;
+    position: relative;
+    top: 30px;
+    font: bold 16px Arial, san-serif;     
+}
+
+
+.subheader {
+   background-color: #eee;
+   width: 100%;
+   height: 60px;
+   position: relative;
+   top: 15px;
+   overflow: hidden;
+   
+}
+
+.subheaderIconSmall {
+   width: 10%;
+   float:left;
+   position: relative;
+   left: 10px;
+   top: 5px;
+}
+
+.subheaderIcon {
+   width: 10%;
+   float:left;
+   position: relative;
+   left: 10px;
+   top: 15px;
+}
+
+.subheaderText {
+   width: 60%;
+   float: left;
+   position: relative;
+   top: 12px; 
+   left: 20px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+}
+
+.subheaderText .span {
+   font: bold 14px Arial, san-serif;
+   color: #000;
+   
+}
+
+.subheaderFwd {
+   width: 10%;
+   float: right;
+   position: relative;
+   top: 15px;
+}
+
+.sec1 {
+    
+   background-color: transparent;
+   overflow: hidden;
+   position: relative;
+   top: 15px;
+   left: 40px;
+   margin: 0 auto;
+}
+
+.sec1a {
+    float: left; 
+    width: auto;    
+}
+
+.sec1b {
+    float: left;
+    width: auto;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+ul#listLinks {
+    list-style-type: none;
+    background-color: #EEE;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 10px; 
+    margin-right: 30px;
+}
+
+ul#listLinks li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul#listLinks li.li1 {
+   background:url(images/folder.png) top left no-repeat no-repeat;
+   padding-left: 5px;
+}
+
+ul#listLinks li.li2 {
+   background:url(images/folder_stand.png) top left no-repeat no-repeat;
+   padding-left: 5px;
+}
+
+ul#listLinks li.li3 {
+   background:url(images/forward.png) top left no-repeat no-repeat;
+   padding-left: 5px;
+}
+
+ul#listLinks li:last-child { 
+   border-bottom: 0px solid #ccc;
+}
+
+ul#listLinks li a {
+    position: relative;  
+    left: 35px;
+}
+
+ul#bottomNav {
+   list-style-type: none;
+   background-color: #ccc;
+   overflow: hidden;
+   width: 100%;
+   padding:  0 0 0 15px;
+}
+
+ul#bottomNav li {
+    display: inline; 
+    float: left; 
+    width: 25%;
+    margin: 0 auto;
+    border-right: 1px solid #fff;
+}
+
+ul#bottomNav li:last-child { 
+   position: relative;
+   top: 8px;
+   left: 8px;
+   border-right: 0px solid #ccc;
+}
+
+
+ul#listLinksFull {
+    list-style-type: none;
+    background-color: #EEE;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0px 0 20px 0;
+    margin-top: 30px;
+    width: 90%;
+}
+
+ul#listLinksFull li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul#listLinksFull li:first-child {
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+ul#listLinksFull li:last-child {
+   
+    border-bottom: 0px solid #ccc;
+
+}
+
+.customForm {
+   background-color: transparent;
+   width: 95%;
+   position: relative;
+   top: 18px;
+   border-top: 1px solid #000;
+   margin: 0 auto;
+}
+
+.customForm input {
+    padding: 0.400em;
+    font: normal 14px Arial, san-serif;
+ }
+
+.formField1 {
+   width: 80%;
+   float: left;
+   position: relative;
+   top: 12px; 
+   left: 12px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+}
+
+.formField1Icon {
+   float: left;
+   position: relative;
+   top: 11px; 
+   left: 15px;
+}
+
+.formFieldSelect {
+   width: 90%;
+   float: left;
+   border-top: 10px solid #fff;
+   position: relative;
+   top: 12px;
+   left: 12px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+    clear: both;
+}
+
+.formFieldInput1 {
+   float: left;
+   border-top: 10px solid #fff;
+   position: relative;
+   top: 12px;
+   left: 10px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+   
+}
+
+.formFieldText {
+   float: left;
+   position: relative;
+   top: 12px;
+   left: 12px;
+   border: 10px solid #fff;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+}
+
+.formFieldInput2 {
+   float: left;
+   border-top: 10px solid #fff;
+   position: relative;
+   top: 12px;
+   left: 12px;
+   font: normal 14px Arial, san-serif;
+   color: #000;
+}
